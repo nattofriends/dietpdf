@@ -19,7 +19,7 @@ def jpegtran_optimize(content: bytes) -> bytes:
     assert type(content) == bytes
 
     if which("jpegtran") == None or which("jpegoptim") == None:
-        return None
+        return content
 
     streams = {}
 
